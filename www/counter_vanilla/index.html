@@ -1,0 +1,53 @@
+<html lang="it-IT">
+
+<head>
+  <title>Contatore sagra</title>
+  <link href="custom.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+</head>
+
+<body onkeypress="myFunction(event)">
+  <div id="titolo"> <span> Stiamo servendo... </span> </div>
+  <div id="container"></div>
+  <div id="footer"> <span> Sagra Campipiani</span> </div>
+</body>
+
+<script>
+
+  min_value = 0;
+  max_value = 999;
+
+  actual_value = 0;
+
+  var audio = new Audio('ding.mp3');
+
+  function myFunction(event) {
+    var chCode = ('charCode' in event) ? event.charCode : event.keyCode;
+    //alert(chCode);
+    if (chCode == 115 || chCode == 47) { //lettera S o tasto /
+      var input = prompt("Salto al numero...", "");
+      actual_value = parseInt(input, 10);
+    } else if (chCode == 43 || chCode == 32) {
+      audio.currentTime = 0;
+      actual_value = actual_value + 1;
+      audio.play();
+    } else if (chCode == 45) {
+      actual_value = actual_value - 1;
+    }
+
+    if (actual_value > max_value) {
+      actual_value = min_value;
+    }
+    if (actual_value < min_value) {
+      actual_value = max_value;
+    }
+
+    document.getElementById('container').innerHTML = actual_value;
+
+  }
+
+  document.getElementById('container').innerHTML = actual_value;
+
+</script>
+
+</html>

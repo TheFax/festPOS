@@ -7,6 +7,8 @@ Se ti piace il fai-da te e non vuoi utilizzare i server allegati a questo proget
 
 * Cartella `counter`\
 Questa cartella contiene un "contatore" che può essere visualizzato su uno schermo o televisore, tramite un computer o tramite un raspberry. Il contatore si incrementa premendo il tasto + oppure la barra spaziatrice sulla tastiera. Si decrementa con il tasto "-". Con il tasto "/" è possibile saltare da un numero ad un altro in modo veloce.
+* Cartella `counter_vanilla`\
+Questa cartella contiene un altro contatore, stavolta sviluppato SENZA usare PHP, quindi con solo Javascript. Questo contatore ha lo svantaggio di non "ricordare" l'ultimo numero a cui era arrivato in caso di power outage.
 * Cartella `fest_pos_engine`\
 Contiene il software festPOS vero e proprio.
 * Cartella `fest_pos_website`\

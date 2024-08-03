@@ -1,0 +1,51 @@
+/*
+https://color.adobe.com/it/ice-color-theme-4089358/edit/?copy=true&base=2&rule=Custom&selected=4&name=Copia%20di%20ice&mode=rgb&rgbvalues=0.929412,0.933333,0.941176,0.001914894898370726,0.19723431613859005,0.27,0.647059,0.717647,0.756863,0.012957761603841576,0.36605595990382783,0.46,0.00784314,0.647059,0.756863&swatchOrder=0,1,2,3,4
+*/
+:root {
+  --main-bg-color: #003245;
+  --number-color: #EDEEF0;
+  --boxes-bg-color: #035D75;
+  --boxes-txt-color: #02A5C1;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+#titolo {
+  display: block;
+  height: 15vh;
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Verdana";
+  border-radius: 30px;
+  background-color: var(--boxes-bg-color);
+  color: var(--number-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 67vh;
+  background-color: var(--main-bg-color);
+  color: var(--number-color);
+  text-align: center;
+  font-size: 40vh;
+  font-family: "Verdana";
+}
+
+#footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15vh;
+  background-color: var(--boxes-bg-color);
+  color: var(--boxes-txt-color);
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Verdana";
+  border-radius: 30px;
+}
