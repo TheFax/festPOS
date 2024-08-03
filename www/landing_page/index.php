@@ -44,7 +44,7 @@
 							<?php 
 								$var = "?a=" . strval(floor(microtime(true) * 1000));
 							?>
-							<li><a href="../fest_pos_engine/statistiche/scontrini.csv?<?= $var ?>">Scarica database scontrini</a></li>
+							<li><a href="../fest_pos_engine/statistiche/scontrini.csv<?= $var ?>">Scarica database scontrini</a></li>
 							<li><a href="../fest_pos_engine/statistiche/prodotti_venduti.json<?= $var ?>">Visualizza quantita' prodotti venduti</a></li>
 							<li><a href="../fest_pos_engine/statistiche/incasso.txt<?= $var ?>">Visualizza totale incasso</a></li>
 							<li><a href="../fest_pos_engine/statistiche/counter.txt<?= $var ?>">Visualizza numero scontrini emessi</a></li>
