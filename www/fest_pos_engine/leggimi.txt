@@ -1,0 +1,41 @@
+Cosa serve a cosa?
+
+/src                 - Contiene il sorgente della libreria escpos/Mike42
+
+autoload.php         - Carica la libreria (vedi dentro il file per descrizione più accurata)
+
+festpos_engine_db.js - Tutta la parte javascript del POS
+
+jquery*.js           - Serve per comporre il messaggio POST che esce da Javascript
+
+counter.php          - Il file PHP che si occupa di fornire il numero scontrino progressivo
+                       All'interno di questo file si può configurare il numero massimo di scontrini (99 o 999?) e 
+                       anche la posizione del file counter.
+print_demo.php       - Lancia una stampa di prova appena richiamato, senza argomenti in POST.
+                       Visualizza anche la versione PHP e Apache.
+
+print_demo.png       - Il file PNG usato nel file print_demo.php
+
+index.php            - L'interfaccia web del POS
+
+/config_xxxxxxxxx/   - Le diverse cartelle contengono le configurazioni
+
+DENTRO ALLA CARTELLA /Config_xxxxxxxx/
+
+receipt_print.php    - Il PHP che si occupa di stampare i veri scontrini e calcolare le statistiche
+
+categoria*.png       - Le immagini sugli scontrini per categoria
+
+sagra.*              - Il logo in alto sugli scontrini economici
+
+
+
+
+
+Questo software funziona con:
+-PHP 5.6.30 (testato)
+-Apache 2.4.25 (win 32) (testato)
+-Modulo PHP "imagick", oppure, Modulo PHP "gd"
+
+
+

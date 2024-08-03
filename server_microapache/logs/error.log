@@ -1,0 +1,162 @@
+[Sat Jul 28 14:58:34.602179 2018] [mpm_winnt:notice] [pid 9772:tid 708] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sat Jul 28 14:58:34.617822 2018] [mpm_winnt:notice] [pid 9772:tid 708] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Jul 28 14:58:34.617822 2018] [core:notice] [pid 9772:tid 708] AH00094: Command line: 'E:\\Microapache copiato da Dokuwiki\\server\\mapache.exe -d E:/Microapache copiato da Dokuwiki/server'
+[Sat Jul 28 14:58:34.633420 2018] [mpm_winnt:notice] [pid 9772:tid 708] AH00418: Parent: Created child process 5080
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 5080:tid 608] AH00354: Child: Starting 64 worker threads.
+[Sat Jul 28 15:21:00.003336 2018] [mpm_winnt:notice] [pid 9772:tid 708] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jul 28 15:21:02.025949 2018] [mpm_winnt:notice] [pid 5080:tid 608] AH00364: Child: All worker threads have exited.
+[Sat Jul 28 15:21:02.322794 2018] [mpm_winnt:notice] [pid 9772:tid 708] AH00430: Parent: Child process 5080 exited successfully.
+[Mon Jul 30 19:50:28.165107 2018] [mpm_winnt:notice] [pid 1332:tid 728] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Mon Jul 30 19:50:28.165107 2018] [mpm_winnt:notice] [pid 1332:tid 728] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Mon Jul 30 19:50:28.165107 2018] [core:notice] [pid 1332:tid 728] AH00094: Command line: 'E:\\Microapache copiato da Dokuwiki\\server\\mapache.exe -d E:/Microapache copiato da Dokuwiki/server'
+[Mon Jul 30 19:50:28.165107 2018] [mpm_winnt:notice] [pid 1332:tid 728] AH00418: Parent: Created child process 8048
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 8048:tid 672] AH00354: Child: Starting 64 worker threads.
+[Mon Jul 30 19:55:40.674788 2018] [mpm_winnt:notice] [pid 1332:tid 728] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 30 19:55:42.691140 2018] [mpm_winnt:notice] [pid 8048:tid 672] AH00364: Child: All worker threads have exited.
+[Mon Jul 30 19:55:42.706766 2018] [mpm_winnt:notice] [pid 1332:tid 728] AH00430: Parent: Child process 8048 exited successfully.
+[Mon Jul 30 19:57:12.936791 2018] [mpm_winnt:notice] [pid 2068:tid 688] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Mon Jul 30 19:57:12.936791 2018] [mpm_winnt:notice] [pid 2068:tid 688] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Mon Jul 30 19:57:12.936791 2018] [core:notice] [pid 2068:tid 688] AH00094: Command line: 'E:\\Microapache copiato da Dokuwiki\\server\\mapache.exe -d E:/Microapache copiato da Dokuwiki/server'
+[Mon Jul 30 19:57:12.936791 2018] [mpm_winnt:notice] [pid 2068:tid 688] AH00418: Parent: Created child process 9584
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 9584:tid 716] AH00354: Child: Starting 64 worker threads.
+[Mon Jul 30 20:35:09.147381 2018] [mpm_winnt:notice] [pid 2068:tid 688] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 30 20:35:11.181563 2018] [mpm_winnt:notice] [pid 9584:tid 716] AH00364: Child: All worker threads have exited.
+[Mon Jul 30 20:35:11.228435 2018] [mpm_winnt:notice] [pid 2068:tid 688] AH00430: Parent: Child process 9584 exited successfully.
+[Tue Jul 31 21:25:32.323832 2018] [mpm_winnt:notice] [pid 6788:tid 568] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jul 31 21:25:32.355236 2018] [mpm_winnt:notice] [pid 6788:tid 568] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Jul 31 21:25:32.355236 2018] [core:notice] [pid 6788:tid 568] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Tue Jul 31 21:25:32.495717 2018] [mpm_winnt:notice] [pid 6788:tid 568] AH00418: Parent: Created child process 6652
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 6652:tid 496] AH00354: Child: Starting 64 worker threads.
+[Tue Jul 31 21:39:38.866819 2018] [mpm_winnt:notice] [pid 6788:tid 568] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 31 21:39:40.898077 2018] [mpm_winnt:notice] [pid 6652:tid 496] AH00364: Child: All worker threads have exited.
+[Tue Jul 31 21:39:40.960577 2018] [mpm_winnt:notice] [pid 6788:tid 568] AH00430: Parent: Child process 6652 exited successfully.
+[Fri Aug 03 17:26:15.286064 2018] [mpm_winnt:notice] [pid 4268:tid 576] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Fri Aug 03 17:26:15.301691 2018] [mpm_winnt:notice] [pid 4268:tid 576] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Fri Aug 03 17:26:15.301691 2018] [core:notice] [pid 4268:tid 576] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Fri Aug 03 17:26:15.348564 2018] [mpm_winnt:notice] [pid 4268:tid 576] AH00418: Parent: Created child process 6132
+[Fri Aug 03 17:26:17.223564 2018] [mpm_winnt:notice] [pid 6132:tid 564] AH00354: Child: Starting 64 worker threads.
+[Sat Aug 04 14:10:08.797847 2018] [core:warn] [pid 5240:tid 476] AH00098: pid file C:/Microapache/server/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Aug 04 14:10:10.235354 2018] [mpm_winnt:notice] [pid 5240:tid 476] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sat Aug 04 14:10:10.235354 2018] [mpm_winnt:notice] [pid 5240:tid 476] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Aug 04 14:10:10.235354 2018] [core:notice] [pid 5240:tid 476] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Sat Aug 04 14:10:10.282228 2018] [mpm_winnt:notice] [pid 5240:tid 476] AH00418: Parent: Created child process 1880
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 1880:tid 564] AH00354: Child: Starting 64 worker threads.
+[Sat Aug 04 14:32:31.422910 2018] [mpm_winnt:notice] [pid 5240:tid 476] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Aug 04 14:32:35.719776 2018] [mpm_winnt:notice] [pid 1880:tid 564] AH00364: Child: All worker threads have exited.
+[Sat Aug 04 14:32:35.829155 2018] [mpm_winnt:notice] [pid 5240:tid 476] AH00430: Parent: Child process 1880 exited successfully.
+[Sat Aug 04 14:32:39.282302 2018] [mpm_winnt:notice] [pid 6196:tid 448] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sat Aug 04 14:32:39.282302 2018] [mpm_winnt:notice] [pid 6196:tid 448] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Aug 04 14:32:39.282302 2018] [core:notice] [pid 6196:tid 448] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Sat Aug 04 14:32:39.313702 2018] [mpm_winnt:notice] [pid 6196:tid 448] AH00418: Parent: Created child process 5460
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 5460:tid 564] AH00354: Child: Starting 64 worker threads.
+[Sat Aug 04 14:36:59.487967 2018] [mpm_winnt:notice] [pid 6196:tid 448] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Aug 04 14:37:01.519440 2018] [mpm_winnt:notice] [pid 5460:tid 564] AH00364: Child: All worker threads have exited.
+[Sat Aug 04 14:37:01.597412 2018] [mpm_winnt:notice] [pid 6196:tid 448] AH00430: Parent: Child process 5460 exited successfully.
+[Sat Aug 04 17:07:06.044504 2018] [mpm_winnt:notice] [pid 6900:tid 548] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sat Aug 04 17:07:06.044504 2018] [mpm_winnt:notice] [pid 6900:tid 548] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Aug 04 17:07:06.044504 2018] [core:notice] [pid 6900:tid 548] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Sat Aug 04 17:07:06.075753 2018] [mpm_winnt:notice] [pid 6900:tid 548] AH00418: Parent: Created child process 332
+[Sat Aug 04 17:07:07.763252 2018] [mpm_winnt:notice] [pid 332:tid 564] AH00354: Child: Starting 64 worker threads.
+[Sun Aug 05 17:10:16.614779 2018] [core:warn] [pid 6952:tid 508] AH00098: pid file C:/Microapache/server/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Aug 05 17:10:17.911516 2018] [mpm_winnt:notice] [pid 6952:tid 508] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sun Aug 05 17:10:17.911516 2018] [mpm_winnt:notice] [pid 6952:tid 508] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Aug 05 17:10:17.911516 2018] [core:notice] [pid 6952:tid 508] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Sun Aug 05 17:10:17.942767 2018] [mpm_winnt:notice] [pid 6952:tid 508] AH00418: Parent: Created child process 6396
+[Sun Aug 05 17:10:19.942762 2018] [mpm_winnt:notice] [pid 6396:tid 592] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 06 17:40:22.978967 2018] [core:warn] [pid 1736:tid 516] AH00098: pid file C:/Microapache/server/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Aug 06 17:40:24.150854 2018] [mpm_winnt:notice] [pid 1736:tid 516] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Mon Aug 06 17:40:24.150854 2018] [mpm_winnt:notice] [pid 1736:tid 516] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Mon Aug 06 17:40:24.150854 2018] [core:notice] [pid 1736:tid 516] AH00094: Command line: 'C:\\Microapache\\server\\mapache.exe -d C:/Microapache/server'
+[Mon Aug 06 17:40:24.182105 2018] [mpm_winnt:notice] [pid 1736:tid 516] AH00418: Parent: Created child process 2428
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 2428:tid 520] AH00354: Child: Starting 64 worker threads.
+[Mon Aug 06 22:29:48.644547 2018] [mpm_winnt:notice] [pid 1736:tid 516] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Aug 06 22:29:50.674187 2018] [mpm_winnt:notice] [pid 2428:tid 520] AH00364: Child: All worker threads have exited.
+[Mon Aug 06 22:29:50.799032 2018] [mpm_winnt:notice] [pid 1736:tid 516] AH00430: Parent: Child process 2428 exited successfully.
+[Tue Jul 16 19:46:28.025898 2024] [mpm_winnt:notice] [pid 3688:tid 824] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jul 16 19:46:28.025898 2024] [mpm_winnt:notice] [pid 3688:tid 824] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Jul 16 19:46:28.025898 2024] [core:notice] [pid 3688:tid 824] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Tue Jul 16 19:46:28.025898 2024] [mpm_winnt:notice] [pid 3688:tid 824] AH00418: Parent: Created child process 11096
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 11096:tid 708] AH00354: Child: Starting 64 worker threads.
+[Tue Jul 16 20:01:25.997741 2024] [mpm_winnt:notice] [pid 3688:tid 824] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 16 20:01:28.019019 2024] [mpm_winnt:notice] [pid 11096:tid 708] AH00364: Child: All worker threads have exited.
+[Tue Jul 16 20:01:28.050313 2024] [mpm_winnt:notice] [pid 3688:tid 824] AH00430: Parent: Child process 11096 exited successfully.
+[Tue Jul 16 20:02:51.765980 2024] [mpm_winnt:notice] [pid 1348:tid 680] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jul 16 20:02:51.765980 2024] [mpm_winnt:notice] [pid 1348:tid 680] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Jul 16 20:02:51.765980 2024] [core:notice] [pid 1348:tid 680] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Tue Jul 16 20:02:51.765980 2024] [mpm_winnt:notice] [pid 1348:tid 680] AH00418: Parent: Created child process 6972
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 6972:tid 680] AH00354: Child: Starting 64 worker threads.
+[Tue Jul 16 20:14:07.346637 2024] [mpm_winnt:notice] [pid 1348:tid 680] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 16 20:14:09.364932 2024] [mpm_winnt:notice] [pid 6972:tid 680] AH00364: Child: All worker threads have exited.
+[Tue Jul 16 20:14:09.395287 2024] [mpm_winnt:notice] [pid 1348:tid 680] AH00430: Parent: Child process 6972 exited successfully.
+[Tue Jul 16 20:22:40.449469 2024] [mpm_winnt:notice] [pid 4424:tid 544] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jul 16 20:22:40.449469 2024] [mpm_winnt:notice] [pid 4424:tid 544] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Jul 16 20:22:40.449469 2024] [core:notice] [pid 4424:tid 544] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Tue Jul 16 20:22:40.449469 2024] [mpm_winnt:notice] [pid 4424:tid 544] AH00418: Parent: Created child process 3388
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 3388:tid 684] AH00354: Child: Starting 64 worker threads.
+[Tue Jul 16 21:15:47.008287 2024] [mpm_winnt:notice] [pid 4424:tid 544] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 16 21:15:49.049073 2024] [mpm_winnt:notice] [pid 3388:tid 684] AH00364: Child: All worker threads have exited.
+[Tue Jul 16 21:15:49.064796 2024] [mpm_winnt:notice] [pid 4424:tid 544] AH00430: Parent: Child process 3388 exited successfully.
+[Sat Jul 20 20:07:31.209392 2024] [mpm_winnt:notice] [pid 2524:tid 684] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sat Jul 20 20:07:31.209392 2024] [mpm_winnt:notice] [pid 2524:tid 684] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sat Jul 20 20:07:31.209392 2024] [core:notice] [pid 2524:tid 684] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Sat Jul 20 20:07:31.209392 2024] [mpm_winnt:notice] [pid 2524:tid 684] AH00418: Parent: Created child process 17004
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 17004:tid 684] AH00354: Child: Starting 64 worker threads.
+[Sat Jul 20 20:12:45.758142 2024] [mpm_winnt:notice] [pid 2524:tid 684] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sat Jul 20 20:12:47.774625 2024] [mpm_winnt:notice] [pid 17004:tid 684] AH00364: Child: All worker threads have exited.
+[Sat Jul 20 20:12:47.821624 2024] [mpm_winnt:notice] [pid 2524:tid 684] AH00430: Parent: Child process 17004 exited successfully.
+[Sun Jul 21 10:09:59.227055 2024] [mpm_winnt:notice] [pid 2828:tid 668] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Sun Jul 21 10:09:59.227055 2024] [mpm_winnt:notice] [pid 2828:tid 668] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Sun Jul 21 10:09:59.227055 2024] [core:notice] [pid 2828:tid 668] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Sun Jul 21 10:09:59.227055 2024] [mpm_winnt:notice] [pid 2828:tid 668] AH00418: Parent: Created child process 9544
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 9544:tid 684] AH00354: Child: Starting 64 worker threads.
+[Sun Jul 21 10:46:33.111830 2024] [mpm_winnt:notice] [pid 2828:tid 668] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Jul 21 10:46:35.132666 2024] [mpm_winnt:notice] [pid 9544:tid 684] AH00364: Child: All worker threads have exited.
+[Sun Jul 21 10:46:35.163920 2024] [mpm_winnt:notice] [pid 2828:tid 668] AH00430: Parent: Child process 9544 exited successfully.
+[Wed Jul 24 19:41:40.288522 2024] [mpm_winnt:notice] [pid 8324:tid 660] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jul 24 19:41:40.288522 2024] [mpm_winnt:notice] [pid 8324:tid 660] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Jul 24 19:41:40.288522 2024] [core:notice] [pid 8324:tid 660] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Wed Jul 24 19:41:40.288522 2024] [mpm_winnt:notice] [pid 8324:tid 660] AH00418: Parent: Created child process 14332
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 14332:tid 692] AH00354: Child: Starting 64 worker threads.
+[Wed Jul 24 20:03:22.206991 2024] [mpm_winnt:notice] [pid 8324:tid 660] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jul 24 20:03:29.720218 2024] [core:warn] [pid 11556:tid 496] AH00098: pid file F:/xampp/htdocs/server/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Jul 24 20:03:29.744193 2024] [mpm_winnt:notice] [pid 11556:tid 496] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Wed Jul 24 20:03:29.744193 2024] [mpm_winnt:notice] [pid 11556:tid 496] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Wed Jul 24 20:03:29.744193 2024] [core:notice] [pid 11556:tid 496] AH00094: Command line: 'F:\\xampp\\htdocs\\server\\mapache.exe -d F:/xampp/htdocs/server'
+[Wed Jul 24 20:03:29.754580 2024] [mpm_winnt:notice] [pid 11556:tid 496] AH00418: Parent: Created child process 13000
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 13000:tid 812] AH00354: Child: Starting 64 worker threads.
+[Wed Jul 24 20:03:34.772896 2024] [mpm_winnt:notice] [pid 14332:tid 692] AH00364: Child: All worker threads have exited.
+[Wed Jul 24 21:24:06.385058 2024] [mpm_winnt:notice] [pid 11556:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Jul 24 21:24:08.410693 2024] [mpm_winnt:notice] [pid 13000:tid 812] AH00364: Child: All worker threads have exited.
+[Wed Jul 24 21:24:08.446056 2024] [mpm_winnt:notice] [pid 11556:tid 496] AH00430: Parent: Child process 13000 exited successfully.
+[Tue Jul 30 21:36:56.216255 2024] [mpm_winnt:notice] [pid 348:tid 596] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Tue Jul 30 21:36:56.231908 2024] [mpm_winnt:notice] [pid 348:tid 596] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Tue Jul 30 21:36:56.231908 2024] [core:notice] [pid 348:tid 596] AH00094: Command line: 'F:\\xampp\\htdocs\\microapache\\mapache.exe -d F:/xampp/htdocs/microapache'
+[Tue Jul 30 21:36:56.231908 2024] [mpm_winnt:notice] [pid 348:tid 596] AH00418: Parent: Created child process 12116
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 12116:tid 712] AH00354: Child: Starting 64 worker threads.
+[Tue Jul 30 22:04:27.171816 2024] [mpm_winnt:notice] [pid 348:tid 596] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Jul 30 22:04:29.181050 2024] [mpm_winnt:notice] [pid 12116:tid 712] AH00364: Child: All worker threads have exited.
+[Tue Jul 30 22:04:29.196572 2024] [mpm_winnt:notice] [pid 348:tid 596] AH00430: Parent: Child process 12116 exited successfully.
+[Fri Aug 02 19:29:21.085027 2024] [mpm_winnt:notice] [pid 9236:tid 496] AH00455: Apache/2.4.25 (Win32) PHP/5.6.30 configured -- resuming normal operations
+[Fri Aug 02 19:29:21.085027 2024] [mpm_winnt:notice] [pid 9236:tid 496] AH00456: Apache Lounge VC11 Server built: Dec 20 2016 13:02:04
+[Fri Aug 02 19:29:21.085027 2024] [core:notice] [pid 9236:tid 496] AH00094: Command line: 'F:\\xampp\\htdocs\\microapache\\mapache.exe -d F:/xampp/htdocs/microapache'
+[Fri Aug 02 19:29:21.085027 2024] [mpm_winnt:notice] [pid 9236:tid 496] AH00418: Parent: Created child process 8768
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 8768:tid 696] AH00354: Child: Starting 64 worker threads.
+[Fri Aug 02 22:33:52.943644 2024] [mpm_winnt:notice] [pid 9236:tid 496] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Aug 02 22:33:54.958078 2024] [mpm_winnt:notice] [pid 8768:tid 696] AH00364: Child: All worker threads have exited.
+[Fri Aug 02 22:33:55.021013 2024] [mpm_winnt:notice] [pid 9236:tid 496] AH00430: Parent: Child process 8768 exited successfully.

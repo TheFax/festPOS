@@ -1,0 +1,94 @@
+  /*PROMEMORIA:
+  # ---> STILE ID
+  . ---> STILE CLASSE
+  */
+
+  /*Ora partono gli stili body*/
+
+  body {
+      font-family: sans-serif;
+      /* Stile del font di default, di tutto il body */
+      background-color: rgb(255, 255, 255);
+      background-image: url("background.jpg");
+  }
+
+  /*Ora partono gli stili tabella*/
+
+  table {
+      /*valido per tutte le tabelle*/
+      /*  border:1px solid #f00; */
+      color: white;
+      font-size: 21px;
+  }
+
+  .table_prodotti_scelti {
+      /*valido per la tabella prodotti selezionati*/
+      /* border:1px solid #f00; */
+      width: 100%;
+  }
+
+
+  .tr_acquisti .td_acquisti {
+      /*Valido solo per le due classi menzionate*/
+      min-width: 15%;
+      padding: 4px;
+      border-collapse: collapse;
+      border-bottom: 1px solid #ddd;
+      /*margin:auto;*/
+  }
+
+  .tr_acquisti:nth-child(even) {
+      background-color: lightgray;
+      color: black;
+  }
+
+  .tr_acquisti:nth-child(odd) {
+      background-color: #f2f2f2;
+      color: black;
+  }
+
+  .tbl_con_bordo {
+      text-align: center;
+      vertical-align: middle;
+      border: 3px solid black;
+      border-radius: 4px;
+  }
+
+  .sfondo_grigio {
+      background-color: gray;
+  }
+
+  .td_buttons {
+      vertical-align: top;
+  }
+
+  .table_options {
+      width: 300px;
+      text-align: left;
+      margin-left: auto;
+      /*Questo per renderla "centrata" col pulsante*/
+      margin-right: auto;
+      /*Questo per renderla "centrata" col pulsante*/
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  }
+
+  /*Ora partono gli stili pulsanti*/
+
+  .mybutton {
+      width: 300px;
+      height: 42px;
+      border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 21px;
+      color: black;
+      /*Colore del testo (se non diversamente specificato) */
+      background-color: #AAAAAA;
+      /*Colore dello sfondo (se non diversamente specificato) */
+      display: inline-block;
+      border: none;
+      margin: 2px 2px 2px 2px;
+      /*margine superiore/inferiore sinistro/destro */
+      cursor: pointer;
+  }

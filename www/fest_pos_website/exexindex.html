@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>festPOS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-36008745-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <span class="icon fa-diamond"></span>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>festPOS</h1>
+                    <p>La cassa su misura per la tua sagra</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Info</a></li>
+                    <li><a href="#work">Tecnologia</a></li>
+                    <li><a href="#about">Download</a></li>
+                    <li><a href="#contribuisci">Contribuisci</a></li>
+                    <li><a href="#contact">Contattami</a></li>
+                    <!--<li><a href="#elements">Elements</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Intro -->
+            <article id="intro">
+                <h2 class="major">Info</h2>
+                <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+                <p><strong>festPOS</strong> e' un software registratore di cassa, progettato per essere utilizzato su computer o tablet tramite un semplice browser come Firefox o Chrome. Tra i punti di forza di questo programma, quello di poter stampare gli scontrini provenienti da piu' casse verso un'unica stampante, mantenendo il "numero d'ordine" coerente. In poche parole, i clienti saranno serviti nel giusto ordine, anche se hanno richiesto lo scontrino da casse diverse.</p>
+                <p>Immaginate di poter ricevere ordini da PC e tablet contemporaneamente e di stampare scontrini separati per bibite, cibo ed altre categorie da voi impostabili. Con festPOS e' possibile.</p>
+                <p><strong>festPOS</strong> puo' essere utilizzato da un PC qualsiasi (con un browser recente), da MAC, da tablet o perche' no... da uno smartphone (si', ma in questo caso procurati un dito sufficientemente piccolo!).</p>
+            </article>
+
+            <!-- Work -->
+            <article id="work">
+                <h2 class="major">Tecnologia</h2>
+                <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+                <p>festPOS funziona su un piccolo <a href="https://it.wikipedia.org/wiki/LAMP">server LAMP</a> locale che puo' essere un <a href="https://www.raspberrypi.org/products/">Raspberry</a>, un emulatore AMP che gira sotto Windows, o qualsiasi altro server che fornisca i servizi <a href="https://it.wikipedia.org/wiki/Apache_HTTP_Server">Apache</a> (o equivalente) e <a href="https://it.wikipedia.org/wiki/PHP">PHP</a>. E' completamente realizzato con PHP, HTML, CSS e JavaScript. NON servono database mySQL e neanche SQLite. La stampa viene inviata tramite comandi ESC/POS direttamente alla/alle stampanti collegate via Ethernet.</p>
+                <p>Da non dimenticare inoltre il contributo di <a href="https://github.com/mike42/escpos-php">Mike42</a> che ha realizzato la libreria PHP che permette la stampa via ESC/POS.</p>
+                <p>festPOS e' un software libero, rilasciato sotto licenza GPL. Per il suo funzionamento e' richiesta una conoscenza almeno basilare delle tecnologie sopra citate, senza la quale sarebbe di difficile configurazione e personalizzazione.</p>
+            </article>
+
+            <!-- About -->
+            <article id="about">
+                <h2 class="major">Download</h2>
+                <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+                <p>Ti avviso che festPOS cambia molto velocemente... quindi la versione che stai per scaricare potrebbe non essere aggiornata. <br> Puoi <a href="festpos.zip">scaricare festPOS ora</a>, oppure puoi contattarmi.</p>
+            </article>
+
+            <article id="contribuisci">
+                <h2 class="major">Contribuisci</h2>
+                <span class="image main"><img src="images/contrib.jpg" alt="" /></span>
+                <p>Sto cercando persone che possano aiutarmi allo sviluppo di questo programma. <br>In giro ci sono troppi programmi a pagamento, assai incompleti e fatti male (secondo me non meritano i soldi spesi); perche' non svilupparne uno di definitivo e free?</p>
+            </article>
+
+            <!-- Contact -->
+            <article id="contact">
+                <h2 class="major">Contattami</h2>
+                <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+                <p>festPOS e' un software sviluppato da TheFAX, a Monte di Malo.<br><br>Scrivi via instagram a wonderfax.</p>
+            </article>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">theFAX</p>
+        </footer>
+
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
