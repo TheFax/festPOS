@@ -15,7 +15,7 @@ Immaginate di poter ricevere ordini da PC e tablet contemporaneamente e di stamp
 festPOS puo' essere utilizzato da un PC qualsiasi (con un browser recente), da MAC, da tablet. Per la massima usabilità è suggerito utilizzare un display touchscreen.
 
 # Utilizzo
-A seconda se stai lavorando su Linux o su Windows, segui una delle due guide che trovi all'interno della cartella 'server_docker_lamp' (per Linux), o 'server_microapache' (per Windows).
+A seconda se stai lavorando su Linux o su Windows, segui una delle due guide che trovi all'interno della cartella `server_docker_lamp` (per Linux), o `server_microapache` (per Windows).
 
 A grandi linee, sarai guidato a clonare il progetto in una specifica directory e ad avviare uno dei due server in dotazione per rendere disponibile via rete la cartella www.
 
@@ -24,6 +24,14 @@ Ricordati puoi utilizzare un qualsiasi server LAMP, quindi non sei affatto vinco
 ```
 cd Cartella_di_destinazione
 git clone https://github.com/TheFax/festPos .
+```
+
+# avahi
+Se non sai cosa sia `avahi`, sappi che questo componente non è correlato in alcun modo con il funzionamento del software festPOS e quindi puoi farne tranquillamente a meno. Questo programma è utile se ci sono più host connessi allo stesso server, è utile utilizzare il servizio `avahi` che di norma è già presente in gran parte delle distribuzioni linux per facilitare il collegamento di un host al server, in quanto il server acquisirà un nome mnemonicamente facile da ricordare al posto del nioso indirizzo IP. 
+
+In questo caso configurare il file `/etc/avahi/avahi-daemon.conf` con il corretto hostname e domain name, poi riavviare il demone con il seguente comando:
+```
+sudo systemctl restart avahi-daemon.service
 ```
 
 # Cercasi sviluppatori
