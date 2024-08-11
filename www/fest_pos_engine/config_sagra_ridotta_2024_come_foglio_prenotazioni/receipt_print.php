@@ -154,34 +154,76 @@ function stampa_scontrini($acquisti, $totale, $contanti, $resto, $numero_scontri
     $array_categorie_uniche = array_unique($array_categorie);
 
     foreach ($array_categorie_uniche as $categoria_corrente) {
-      $printer->setFont(Printer::FONT_A);
-      $printer->setJustification(Printer::JUSTIFY_CENTER);
-      $printer->setEmphasis(true);
-      $printer->setTextSize(3, 3);
-      $printer->text("N." . $numero_scontrino . "\n");
 
       switch ($categoria_corrente) {
         case "Cucina":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_A);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(true);
+          $printer->setTextSize(3, 3);
+          $printer->text("N." . $numero_scontrino . "\n");
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_eat.png", false);
           $printer->graphics($img);
           break;
         case "Bevande":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_B);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(false);
+          $printer->setTextSize(2, 2);
+          $printer->text("N." . $numero_scontrino . "\n");
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_drink.png", false);
           $printer->graphics($img);
           break;
         case "Extra":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_B);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(false);
+          $printer->setTextSize(2, 2);
+          $printer->text("N." . $numero_scontrino . "\n");
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_fast.png", false);
           $printer->graphics($img);
           break;
         case "Vini DOC":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_B);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(false);
+          $printer->setTextSize(2, 2);
+          $printer->text("N." . $numero_scontrino . "\n");
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_vinidoc.png", false);
           $printer->graphics($img);
           break;
         case "BAR":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_B);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(false);
+          $printer->setTextSize(2, 2);
+          $printer->text("N." . $numero_scontrino . "\n");
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_drink.png", false);
           $printer->graphics($img);
           break;
         case "Caffè":
+          // Scrivo il numero dello scontrino
+          $printer->setFont(Printer::FONT_B);
+          $printer->setJustification(Printer::JUSTIFY_CENTER);
+          $printer->setEmphasis(false);
+          $printer->setTextSize(2, 2);
+
+          // Stampo l'immagine
           $img = EscposImage::load("categoria_caffe.png", false);
           $printer->graphics($img);
           break;

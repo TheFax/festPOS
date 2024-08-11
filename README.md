@@ -2,7 +2,9 @@
 festPOS è il software per la cassa, su misura per la tua sagra.
 
 ![screenshot1](https://github.com/TheFax/festPOS/blob/master/Screenshot%201.jpg)
-![screenshot1](https://github.com/TheFax/festPOS/blob/master/Screenshot%202.jpg)
+![screenshot2](https://github.com/TheFax/festPOS/blob/master/Screenshot%202.jpg)
+![foto1](https://github.com/TheFax/festPOS/blob/master/Foto%201.jpg)
+![foto2](https://github.com/TheFax/festPOS/blob/master/Foto%202.jpg)
 
 # Il sito web
 [sito web di festPOS](https://goodstone.altervista.org/festpos)
