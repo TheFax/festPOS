@@ -7,6 +7,9 @@
 // ############################################################################
 
 /*Credit: https://github.com/mike42/escpos-php*/
+
+use function Dom\import_simplexml;
+
 require 'autoload.php';
 
 use Mike42\Escpos\PrintConnectors\NetworkPrintConnector;
@@ -84,7 +87,36 @@ function chiusura_cassa($ip_printer)
     $printer->text(get_file("./statistiche/counter.txt") . "\n\n");
 
     $printer->text("Posizione file statistici:\n");
-    $printer->text("./statistiche/*.*\n");
+    $printer->text("./statistiche/*.*\n\n");
+
+    // Cerco di stampare l'elenco dei prodotti venduti
+    $filePath = './statistiche/prodotti_venduti.json';
+    $prodottiVenduti = null;
+    // Verifica se il file esiste
+    if (file_exists($filePath)) {
+      // Legge il contenuto del file in una stringa
+      $jsonData = file_get_contents($filePath);
+
+      // Decodifica la stringa JSON in un array associativo o un oggetto
+      // true come secondo parametro per ottenere un array associativo
+      $prodottiVenduti = json_decode($jsonData, true);
+
+      // Verifica se la decodifica è andata a buon fine
+      if (json_last_error() === JSON_ERROR_NONE) {
+        $printer->text("Elenco prodotti venduti:\n");
+        $printer->text("--------------------------------------\n");
+        ksort($prodottiVenduti);
+        // Itera direttamente sulle coppie chiave-valore
+        foreach ($prodottiVenduti as $prodottoNome => $quantitaVenduta) {
+          $printer->text("> " . str_pad($prodottoNome, 23, " ") . " Qtà: " . $quantitaVenduta . "\n");
+        }
+        $printer->text("--------------------------------------\n\n");
+      }
+    } else {
+      $printer->text("Impossibile leggere il file dei\n");
+      $printer->text("prodotti venduti.\n");
+      $printer->text("Forse la cassa è già stata chiusa?\n");
+    }
 
     $printer->feed();
 
@@ -123,17 +155,57 @@ mode 	Descrizione
 
 function get_file($filename)
 {
-  if (is_readable($filename)) {
-    $myfile = fopen($filename, "r");
-    while (!flock($myfile, LOCK_EX)) {
-    }                                       // Attendo che il file sia effettivamente bloccato
-    $in_file = fgets($myfile);                // Leggo la prima riga del file (max 1024 caratteri)
-    flock($myfile, LOCK_UN);                       // Sblocco il file
-    fclose($myfile);                             // Chiudo il file
-  } else {
-    return "Chiusura cassa gia' effettuata";
-  }
-  return $in_file;
+    // 1. Controlla prima se il file esiste / è leggibile
+    if (!file_exists($filename)) {
+        return "Cassa già chiusa.";
+    }
+
+    if (!is_readable($filename)) {
+        return "File '$filename' non leggibile";
+    }
+
+    $myfile = @fopen($filename, "r"); // Usiamo '@' per sopprimere gli errori di fopen e gestirli manualmente
+
+    // 2. Controllo se l'apertura del file è andata a buon fine
+    if ($myfile === false) {
+        return "Impossibile leggere '$filename'.";
+    }
+
+    $max_attempts = 10; // Numero massimo di tentativi per il blocco
+    $attempt = 0;
+    $locked = false;
+
+    // 3. Blocco del file con timeout
+    while ($attempt < $max_attempts) {
+        if (flock($myfile, LOCK_EX | LOCK_NB)) { // LOCK_NB per non bloccare l'esecuzione
+            $locked = true;
+            break; // Il blocco è stato acquisito
+        }
+        usleep(100000); // Aspetta 100ms prima di riprovare
+        $attempt++;
+    }
+
+    if (!$locked) {
+        fclose($myfile);
+        return "Festpos in uso?\nImpossibile acquisire blocco\nsu '$filename'.";
+    }
+
+    $in_file = ""; // Inizializza la variabile per sicurezza
+
+    // 4. Lettura della prima riga (se questo è l'intento)
+    // Se vuoi leggere l'intero contenuto, usa $in_file = file_get_contents($filename); dopo lo sblocco e la chiusura (o senza flock)
+    // o se vuoi leggere l'intero contenuto con blocco, leggi tutto qui: while (!feof($myfile)) { $in_file .= fgets($myfile); }
+    $in_file = fgets($myfile); 
+
+    flock($myfile, LOCK_UN); // Sblocco il file
+    fclose($myfile); // Chiudo il file
+
+    // 5. Gestione del caso in cui il file sia vuoto o fgets non legga nulla
+    if ($in_file === false || $in_file === "") {
+        return "File '$filename' vuoto.";
+    }
+
+    return $in_file;
 }
 
 function rinomina_file()
@@ -151,5 +223,9 @@ function rinomina_file()
   }
   if (is_readable("./statistiche/prodotti_venduti.json")) {
     rename("./statistiche/prodotti_venduti.json", "./statistiche/" . $now . "_prodotti_venduti.json");
+  }
+  if (file_exists("./numero_servito.txt")) {
+    // Prova a cancellare il file
+    unlink("./numero_servito.txt");
   }
 }

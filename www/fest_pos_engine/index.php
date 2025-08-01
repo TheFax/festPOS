@@ -37,14 +37,14 @@
         </tr>
         <tr>
             <td class="tbl_con_bordo sfondo_grigio">
-                <input type=button value="Emetti scontrino" class="mybutton" style="background-color: #E83448; width: 390px;" onclick="calcolatrice_show()"><br>
+                <input type=button value="Azzera" class="mybutton" style="background-color: #FF0000; " onclick=azzera()>
             </td>
             <td class="tbl_con_bordo sfondo_grigio">
-                <input type=button value="Torna alla pagina iniziale" class="mybutton" style="background-color: #E83448; width: 390px;" onclick="location.href = '../';"><br>
+                <input type=button value="Torna alla pagina iniziale" class="mybutton" style="background-color:rgb(151, 151, 151); width: 390px;" onclick="location.href = '../';"><br>
             </td>
             <td class="tbl_con_bordo sfondo_grigio">
                 <!--<input type=button class="mybutton" value="[debug] refresh" onclick=visualizza()>-->
-                <input type=button value="Azzera" class="mybutton" style="background-color: #FF0000; " onclick=azzera()>
+                <input type=button value="Emetti scontrino" class="mybutton" style="background-color: rgb(0, 215, 50); width: 390px;" onclick="calcolatrice_show()"><br>
             </td>
         </tr>
     </table>

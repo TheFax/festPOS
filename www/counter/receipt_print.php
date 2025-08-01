@@ -22,7 +22,7 @@ use Mike42\Escpos\EscposImage;
 // ############################################################################
 
 ob_start(); //You could use ob_buffers to send the output to oblivion
-include_once ("../config.php");
+include_once("../config.php");
 ob_end_clean();
 
 /*Arrivano via POST:
@@ -153,12 +153,25 @@ function stampa_scontrini($acquisti, $totale, $contanti, $resto, $numero_scontri
     }
     $array_categorie_uniche = array_unique($array_categorie);
 
+
+
+    //Verifico se tra le categorie c'è una di quelle che incrementano il contatore "servito"
+    $array_elementi_che_incrementano_contatore_servito = ["Cucina", "altra_categoria_che_vuoi_tu"];
+    if (!empty(array_intersect($array_categorie_uniche, $array_elementi_che_incrementano_contatore_servito))) {
+      // E' stato trovato un elemento che prevede l'incremento del contatore.
+      $numero_servito = incrementa_numero_servito();
+    }
+
     foreach ($array_categorie_uniche as $categoria_corrente) {
-      $printer->setFont(Printer::FONT_A);
-      $printer->setJustification(Printer::JUSTIFY_CENTER);
-      $printer->setEmphasis(true);
-      $printer->setTextSize(3, 3);
-      $printer->text("N." . $numero_scontrino . "\n");
+
+      if (in_array($categoria_corrente, $array_elementi_che_incrementano_contatore_servito)) {
+        // E' stato trovato un elemento che prevede la scritta del "numero servito"
+        $printer->setFont(Printer::FONT_A);
+        $printer->setJustification(Printer::JUSTIFY_CENTER);
+        $printer->setEmphasis(true);
+        $printer->setTextSize(3, 3);
+        $printer->text("N." . $numero_servito . "\n");
+      }
 
       switch ($categoria_corrente) {
         case "Cucina":
@@ -302,6 +315,42 @@ function conteggio_prodotti_venduti($acquisti)
   } catch (Exception $e) {
     echo 'Errore: ' . $e->getMessage();
   }
+}
+
+function incrementa_numero_servito()
+{
+  $filename = "numero_servito.txt";
+  $numero_init = 0;
+  $numero_max = 99; // Valore al quale il contatore si riavvolge
+  $numero_servito = $numero_init; // Valore di default
+
+  // Tenta di leggere il contenuto del file
+  if (file_exists($filename)) {
+    $content = file_get_contents($filename);
+
+    // Verifica se il contenuto è un numero valido tra 0 e 99
+    if ($content !== false && ctype_digit($content) && (int)$content >= 0 && (int)$content <= 99) {
+      $numero_attuale = (int)$content;
+      $numero_incrementato = ($numero_attuale + 1) % ($numero_max + 1); // Incrementa e riavvolge a 0 se maggiore di $numero_max
+    } else {
+      // Contenuto inatteso o errore di lettura, inizializza a 0
+      $numero_servito = $numero_init;
+    }
+  } else {
+    // Il file non esiste, inizializza a 0
+    $numero_servito = $numero_init;
+  }
+
+  // Salva il nuovo numero nel file
+  if (file_put_contents($filename, (int)$numero_servito) === false) {
+    // Gestione dell'errore di scrittura (es. permessi)
+    error_log("Errore: Impossibile scrivere nel file '$filename'. Controlla i permessi.");
+    // Potresti voler gestire l'errore in modo diverso, ad esempio mostrando un messaggio all'utente
+  }
+
+  $numero_servito = str_pad($numero_incrementato, 2, '0', STR_PAD_LEFT); // Metto zero pad iniziali se necessario
+
+  return $numero_servito;
 }
 
 // ############################################################################
